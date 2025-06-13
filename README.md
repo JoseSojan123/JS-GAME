@@ -2,7 +2,7 @@
 
 A 2D RPG-style platformer game made using **HTML**, **CSS**, and **JavaScript** — featuring basic physics, player movement, gravity, and collision detection. The game includes tile-based platforms, enemy zones, and responsive controls.
 
-🎮 [Live Demo (optional)](https://your-game-url.vercel.app)
+🎮 [Live Demo (optional)](https://js-game-lake.vercel.app/start.html)
 
 ---
 
