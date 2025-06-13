@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  background-color: #9bbc0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.gameboy {
+  background-color: #c4cfa1;
+  padding: 20px;
+  border-radius: 20px;
+  width: 500px;
+  height: 400px;
+  box-shadow: inset -8px -8px 16px #a2ad7f, inset 8px 8px 16px #e6f1c2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.character {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.character img {
+  width: 100%;
+  max-width: 180px;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.screen {
+  background-color: #8bac0f;
+  width: 50%;
+  height: 70%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset -4px -4px 8px #6b7f0e, inset 4px 4px 8px #a2c33a;
+  text-align: center;
+  color: #1d2b06;
+  padding: 10px;
+}
+
+.start-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #1d2b06;
+  color: #9bbc0f;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 4px #556b2f;
+  transition: all 0.2s ease;
+}
+
+.start-button:hover {
+  background-color: #556b2f;
+}
+
+.start-button:active {
+  box-shadow: 0 2px #556b2f;
+  transform: translateY(2px);
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game with Sidebar</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background-color: black; display: flex; height: 100vh; color: white; font-family: Arial, sans-serif; }
+    canvas { flex: 3; border-right: 2px solid #444; }
+    .sidebar { flex: 1; background-color: #1a1a1a; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; }
+    .sidebar h2 { text-align: center; margin-bottom: 20px; }
+    .info, .controls { background-color: #2b2b2b; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <canvas></canvas>
+
+  <div class="sidebar">
+    <div class="info">
+      <h2>Player Stats</h2>
+      <p><strong>Score:</strong> <span id="score">0</span></p>
+      
+      <p><strong>Jumps:</strong> <span id="jumps">0</span></p>
+    </div>
+  </div>
+
+  <script src="./js/data/collisions.js"></script>
+  <script src="./js/data/classes/CollisionBlock.js"></script>
+  <script src="./js/data/classes/Sprite.js"></script>
+  <script src="./js/data/classes/Player.js"></script>
+  <script src="./js/utils.js"></script>
+
+  <script>
+    let jumpCount = 0;
+    let score = 0;
+
+    const scoreDisplay = document.getElementById('score');
+    const jumpsDisplay = document.getElementById('jumps');
+
+    function jump() {
+      jumpCount++;
+      score += 10;
+      jumpsDisplay.textContent = jumpCount;
+      scoreDisplay.textContent = score;
+    }
+
+    window.addEventListener('keydown', (event) => {
+      if (event.key.toLowerCase() === 'w') jump();
+    });
+
+    setTimeout(() => {
+      window.location.href = "gameover.html"; // Redirect after 25 seconds
+    }, 25000);
+  </script>
+
+  <script src="index.js"></script>
+</body>
+</html>
