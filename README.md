@@ -27,6 +27,15 @@ A 2D RPG-style platformer game made using **HTML**, **CSS**, and **JavaScript** 
 
 ---
 
+
+## 🎥 Inspiration
+
+This game was built by following and expanding upon the tutorial by **Chris Courses** on YouTube:  
+🔗 [https://www.youtube.com/watch?v=rTVoyWu8r6g](https://www.youtube.com/watch?v=rTVoyWu8r6g)
+
+I’ve modified the logic and added features like **collision detection**, **gravity**, and other enhancements to make the game more interactive and dynamic.
+
+
 ## 🚀 How to Run
 
 ### 📁 Download or Clone
@@ -35,9 +44,3 @@ git clone https://github.com/your-username/JS-GAME.git
 cd JS-GAME
 
 
-## 🎥 Inspiration
-
-This game was built by following and expanding upon the tutorial by **Chris Courses** on YouTube:  
-🔗 [https://www.youtube.com/watch?v=rTVoyWu8r6g](https://www.youtube.com/watch?v=rTVoyWu8r6g)
-
-I’ve modified the logic and added features like **collision detection**, **gravity**, and other enhancements to make the game more interactive and dynamic.
